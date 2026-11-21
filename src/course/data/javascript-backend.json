@@ -1,0 +1,406 @@
+{
+  "id": "javascript-backend",
+  "topic": "Node.js",
+  "icon": "server",
+  "level": "intermediate",
+  "hero": {
+    "label": {
+      "en": "Backend development",
+      "km": "ការអភិវឌ្ឍ Backend"
+    },
+    "title": {
+      "en": "Backend with JavaScript",
+      "km": "អភិវឌ្ឍ Backend ជាមួយ JavaScript"
+    },
+    "description": {
+      "en": "Follow a Node.js project from server setup through routes, controllers, and data models.",
+      "km": "សិក្សាគម្រោង Node.js ចាប់ពីការដំឡើង Server រហូតដល់ Routes, Controllers និង Data Models។"
+    }
+  },
+  "objectives": {
+    "description": {
+      "en": "Trace a request through an existing Node.js application and see how the server organizes its code.",
+      "km": "តាមដាន Request ក្នុងកម្មវិធី Node.js គំរូ និងមើលរបៀបដែល Server រៀបចំកូដ។"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Read a server entry point",
+          "km": "អានចំណុចចាប់ផ្តើមរបស់ Server"
+        },
+        "description": {
+          "en": "Find where the app starts and registers its routes.",
+          "km": "រកកន្លែងដែលកម្មវិធីចាប់ផ្តើម និងចុះបញ្ជី Routes។"
+        }
+      },
+      {
+        "title": {
+          "en": "Follow an HTTP request",
+          "km": "តាមដាន HTTP Request"
+        },
+        "description": {
+          "en": "Connect a route to its controller and inspect how the response is prepared.",
+          "km": "ភ្ជាប់ Route ទៅ Controller របស់វា និងពិនិត្យរបៀបរៀបចំ Response។"
+        }
+      },
+      {
+        "title": {
+          "en": "Identify data access",
+          "km": "ស្គាល់ផ្នែកចូលប្រើទិន្នន័យ"
+        },
+        "description": {
+          "en": "Locate database operations in the model files.",
+          "km": "រកប្រតិបត្តិការមូលដ្ឋានទិន្នន័យក្នុងឯកសារ Models។"
+        }
+      }
+    ]
+  },
+  "format": {
+    "delivery": {
+      "en": "Self-paced",
+      "km": "សិក្សាដោយខ្លួនឯង"
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Learning style",
+          "km": "របៀបរៀន"
+        },
+        "value": {
+          "en": "Hands-on",
+          "km": "អនុវត្តជាក់ស្តែង"
+        }
+      }
+    ],
+    "highlights": [
+      {
+        "en": "Application structure",
+        "km": "រចនាសម្ព័ន្ធកម្មវិធី"
+      },
+      {
+        "en": "Request tracing",
+        "km": "តាមដាន Request"
+      }
+    ],
+    "prerequisites": {
+      "en": "Comfort with JavaScript functions and objects, plus a basic understanding of HTTP and SQL.",
+      "km": "ចេះប្រើអនុគមន៍ និង Object ក្នុង JavaScript និងយល់ដឹងអំពី HTTP និង SQL មូលដ្ឋាន។"
+    }
+  },
+  "techStack": {
+    "groups": [
+      {
+        "title": {
+          "en": "Server and data",
+          "km": "Server និងទិន្នន័យ"
+        },
+        "items": [
+          {
+            "name": "Node.js",
+            "mark": "Node",
+            "role": {
+              "en": "JavaScript runtime",
+              "km": "បរិស្ថានដំណើរការ JavaScript"
+            }
+          },
+          {
+            "name": "HTTP",
+            "mark": "HTTP",
+            "role": {
+              "en": "Request and response",
+              "km": "សំណើ និងចម្លើយ"
+            }
+          },
+          {
+            "name": "SQL",
+            "mark": "SQL",
+            "role": {
+              "en": "Database queries",
+              "km": "សំណួរទៅមូលដ្ឋានទិន្នន័យ"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Development tools",
+          "km": "ឧបករណ៍អភិវឌ្ឍ"
+        },
+        "items": [
+          {
+            "name": "npm",
+            "mark": "npm",
+            "role": {
+              "en": "Dependencies",
+              "km": "គ្រប់គ្រង Dependencies"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "workflow": {
+    "description": {
+      "en": "Start at a route and follow its imports. Write down the expected request and response. If an AI assistant summarizes the code, compare the summary with each source file.",
+      "km": "ចាប់ផ្តើមពី Route ហើយតាមដានឯកសារដែលវា Import។ កត់ត្រា Request និង Response ដែលរំពឹងទុក។ បើជំនួយការ AI សង្ខេបកូដ សូមប្រៀបធៀបការសង្ខេបជាមួយឯកសារដើម។"
+    },
+    "tools": [
+      {
+        "en": "Trace imports",
+        "km": "តាមដាន Imports"
+      },
+      {
+        "en": "Inspect requests",
+        "km": "ពិនិត្យ Requests"
+      },
+      {
+        "en": "Review responses",
+        "km": "ពិនិត្យ Responses"
+      }
+    ]
+  },
+  "approach": {
+    "description": {
+      "en": "Follow one feature through the repository before comparing it with another.",
+      "km": "តាមដានមុខងារមួយក្នុងឃ្លាំងកូដ មុននឹងប្រៀបធៀបជាមួយមុខងារផ្សេងទៀត។"
+    },
+    "steps": [
+      {
+        "en": "Choose a route",
+        "km": "ជ្រើសរើស Route"
+      },
+      {
+        "en": "Find the handler",
+        "km": "រក Handler"
+      },
+      {
+        "en": "Follow the model",
+        "km": "តាមដាន Model"
+      },
+      {
+        "en": "Explain the response",
+        "km": "ពន្យល់ Response"
+      }
+    ]
+  },
+  "roadmap": {
+    "groups": [
+      {
+        "title": {
+          "en": "Server and routing",
+          "km": "Server និង Routing"
+        },
+        "modules": [
+          {
+            "id": "module-1",
+            "title": {
+              "en": "Server entry points",
+              "km": "ចំណុចចាប់ផ្តើមរបស់ Server"
+            },
+            "description": {
+              "en": "Trace how the application starts and where the server is configured.",
+              "km": "តាមដានរបៀបដែលកម្មវិធីចាប់ផ្តើម និងកន្លែងកំណត់រចនាសម្ព័ន្ធ Server។"
+            }
+          },
+          {
+            "id": "module-2",
+            "title": {
+              "en": "Routes and controllers",
+              "km": "Routes និង Controllers"
+            },
+            "description": {
+              "en": "Read a route definition and trace how a request reaches the controller that handles it.",
+              "km": "អាននិយមន័យ Route រួចតាមដាន Request ទៅ Controller ដែលទទួលខុសត្រូវ។"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Data access",
+          "km": "ការចូលប្រើទិន្នន័យ"
+        },
+        "modules": [
+          {
+            "id": "module-3",
+            "title": {
+              "en": "Working with data models",
+              "km": "ការប្រើ Data Models"
+            },
+            "description": {
+              "en": "Explore how the example organizes database operations into models.",
+              "km": "ស្វែងយល់ពីរបៀបដែលគម្រោងគំរូបែងចែកប្រតិបត្តិការមូលដ្ឋានទិន្នន័យទៅក្នុង Models។"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "description": {
+      "en": "Use the roadmap to trace a request and plan a small API of your own.",
+      "km": "ប្រើផែនការសិក្សាដើម្បីតាមដាន Request និងរៀបចំ API តូចមួយរបស់អ្នក។"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Request flow map",
+          "km": "ផែនទីដំណើរការ Request"
+        },
+        "description": {
+          "en": "Diagram the files involved in serving one category request.",
+          "km": "គូសគំនូសបង្ហាញឯកសារដែលពាក់ព័ន្ធនឹងសំណើប្រភេទមួយ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Simple catalog API",
+          "km": "API កាតាឡុកសាមញ្ញ"
+        },
+        "description": {
+          "en": "Plan a list endpoint and separate routing from data access.",
+          "km": "រៀបចំ Endpoint សម្រាប់បញ្ជី ហើយបែងចែក Routing ចេញពីការចូលប្រើទិន្នន័យ។"
+        }
+      }
+    ]
+  },
+  "outcomes": {
+    "items": [
+      {
+        "title": {
+          "en": "Read server structure",
+          "km": "អានរចនាសម្ព័ន្ធ Server"
+        },
+        "description": {
+          "en": "Recognize entry files and the roles of routes, controllers, and models.",
+          "km": "ស្គាល់ឯកសារចាប់ផ្តើម និងតួនាទីរបស់ Routes, Controllers និង Models។"
+        }
+      },
+      {
+        "title": {
+          "en": "Trace request behavior",
+          "km": "តាមដានដំណើរការ Request"
+        },
+        "description": {
+          "en": "Find the code that handles a request and returns a response.",
+          "km": "រកកូដដែលទទួល Request និងផ្ញើ Response។"
+        }
+      },
+      {
+        "title": {
+          "en": "Plan an API feature",
+          "km": "រៀបចំមុខងារ API"
+        },
+        "description": {
+          "en": "Outline how a basic endpoint interacts with a data model.",
+          "km": "គ្រោងពីរបៀបដែល Endpoint មូលដ្ឋានធ្វើការជាមួយ Data Model។"
+        }
+      }
+    ],
+    "summary": {
+      "en": "Follow one request from the route to the database and back.",
+      "km": "តាមដាន Request មួយពី Route ទៅមូលដ្ឋានទិន្នន័យ ហើយត្រឡប់មកវិញ។"
+    }
+  },
+  "access": {
+    "price": {
+      "en": "Free",
+      "km": "ឥតគិតថ្លៃ"
+    },
+    "description": {
+      "en": "Work through the course roadmap at your own pace and track your progress in the study plan.",
+      "km": "សិក្សាតាមផែនការរបស់វគ្គនេះក្នុងល្បឿនរបស់អ្នក ហើយតាមដានវឌ្ឍនភាពក្នុងផែនការសិក្សា។"
+    },
+    "action": {
+      "label": {
+        "en": "Start learning",
+        "km": "ចាប់ផ្តើមសិក្សា"
+      },
+      "href": "#roadmap"
+    },
+    "benefits": [
+      {
+        "en": "Course roadmap",
+        "km": "ផែនការសិក្សា"
+      },
+      {
+        "en": "Study at your own pace",
+        "km": "សិក្សាតាមល្បឿនរបស់អ្នក"
+      },
+      {
+        "en": "Practice exercises",
+        "km": "លំហាត់អនុវត្ត"
+      }
+    ]
+  },
+  "studyPlan": {
+    "description": {
+      "en": "Work through the modules in order. Check off each one after you finish it. Your progress is saved in this browser.",
+      "km": "សិក្សាមេរៀនតាមលំដាប់ ហើយគូសធីកមេរៀននីមួយៗពេលបញ្ចប់។ វឌ្ឍនភាពត្រូវបានរក្សាទុកក្នុងកម្មវិធីរុករកនេះ។"
+    }
+  },
+  "instructor": {
+    "name": {
+      "en": "Teav Piseth",
+      "km": "ទាវ ពិសិដ្ឋ"
+    },
+    "initials": "TP",
+    "role": {
+      "en": "Example author",
+      "km": "អ្នកបង្កើតកូដគំរូ"
+    },
+    "description": {
+      "en": "Teav Piseth creates web development examples and practice projects.",
+      "km": "ទាវ ពិសិដ្ឋ បង្កើតឧទាហរណ៍ និងគម្រោងអនុវត្តអភិវឌ្ឍគេហទំព័រ។"
+    },
+    "skills": [
+      "Node.js",
+      "HTTP",
+      "SQL"
+    ]
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": {
+          "en": "Follow a clear roadmap",
+          "km": "សិក្សាតាមផែនការច្បាស់លាស់"
+        },
+        "description": {
+          "en": "Work through the modules in order and apply each topic to a small exercise.",
+          "km": "សិក្សាមេរៀនតាមលំដាប់ ហើយអនុវត្តប្រធានបទនីមួយៗក្នុងលំហាត់តូចមួយ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Practice independently",
+          "km": "អនុវត្តដោយខ្លួនឯង"
+        },
+        "description": {
+          "en": "Try the project prompts in your own editor and revisit lessons as needed.",
+          "km": "សាកល្បងគម្រោងក្នុងកម្មវិធីសរសេរកូដរបស់អ្នក ហើយត្រឡប់មើលមេរៀនពេលចាំបាច់។"
+        }
+      },
+      {
+        "title": {
+          "en": "Keep track of your study",
+          "km": "តាមដានការសិក្សា"
+        },
+        "description": {
+          "en": "Mark modules complete so you know where to pick up next.",
+          "km": "សម្គាល់មេរៀនដែលបានបញ្ចប់ ដើម្បីដឹងថាត្រូវបន្តពីកន្លែងណា។"
+        }
+      }
+    ]
+  },
+  "closing": {
+    "title": {
+      "en": "Ready to start learning?",
+      "km": "ត្រៀមចាប់ផ្តើមសិក្សាហើយឬនៅ?"
+    },
+    "description": {
+      "en": "Start with the first module, then put what you learn into practice.",
+      "km": "ចាប់ផ្តើមពីមេរៀនដំបូង រួចយកអ្វីដែលអ្នកបានរៀនទៅអនុវត្ត។"
+    }
+  }
+}

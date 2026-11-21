@@ -4,8 +4,8 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- `@vitejs/plugin-react` uses [Oxc](https://oxc.rs)
+- `@vitejs/plugin-react-swc` uses [SWC](https://swc.rs/)
 
 ## React Compiler
 
@@ -73,3 +73,14 @@ export default defineConfig([
 ])
 
 ```
+
+## Editing course content
+
+Each course has a JSON file in [src/course/data](src/course/data). Edit the `en` and `km` values to update English and Khmer. The academy cards also use each course's `hero` and `format.delivery` values.
+
+- Edit `objectives`, `format`, `techStack`, `workflow`, and `approach` for the introductory sections.
+- Edit `roadmap.groups` for module titles, descriptions, and example links. Keep each module's `id` unique within its course and stable when changing its text so existing study progress still applies.
+- Edit `access.action.href` to change where the course access button goes. Add an optional `studyPlan.schedule` array with bilingual `label` and `value` fields to show dates or meeting times.
+- Edit `instructor`, `benefits`, and `closing` for the lower sections. To add an author photo, put the image in `public` and set `instructor.image` to its site path.
+
+Shared headings and button labels are in [labels.json](src/course/data/labels.json).

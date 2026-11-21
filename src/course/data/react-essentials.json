@@ -1,0 +1,414 @@
+{
+  "id": "react-essentials",
+  "topic": "React",
+  "icon": "react",
+  "level": "beginner",
+  "hero": {
+    "label": {
+      "en": "Frontend development",
+      "km": "ការអភិវឌ្ឍ Frontend"
+    },
+    "title": {
+      "en": "React Essentials",
+      "km": "មូលដ្ឋានគ្រឹះ React"
+    },
+    "description": {
+      "en": "Set up a React app with Vite and build a page from reusable components.",
+      "km": "ដំឡើងកម្មវិធី React ជាមួយ Vite ហើយបង្កើតទំព័រពី Component ដែលអាចប្រើឡើងវិញបាន។"
+    }
+  },
+  "objectives": {
+    "description": {
+      "en": "Explore a Vite project and compose a React page from pieces you can reuse.",
+      "km": "ស្វែងយល់ពីគម្រោង Vite ហើយផ្គុំទំព័រ React ពីផ្នែកដែលអាចប្រើឡើងវិញបាន។"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Start a React project",
+          "km": "ចាប់ផ្តើមគម្រោង React"
+        },
+        "description": {
+          "en": "Identify the dependencies, development script, and production build.",
+          "km": "ស្គាល់ Dependencies, Script សម្រាប់អភិវឌ្ឍ និង Production Build។"
+        }
+      },
+      {
+        "title": {
+          "en": "Extract components",
+          "km": "បំបែកជា Components"
+        },
+        "description": {
+          "en": "Identify repeating page elements and give them their own components.",
+          "km": "សម្គាល់ធាតុដែលប្រើដដែលៗ ហើយបំបែកវាជា Component ផ្ទាល់ខ្លួន។"
+        }
+      },
+      {
+        "title": {
+          "en": "Compose a page",
+          "km": "ផ្គុំទំព័រ"
+        },
+        "description": {
+          "en": "Use JSX and local assets to organize a page in React.",
+          "km": "ប្រើ JSX និង Assets ក្នុងគម្រោង ដើម្បីរៀបចំទំព័រក្នុង React។"
+        }
+      }
+    ]
+  },
+  "format": {
+    "delivery": {
+      "en": "Self-paced",
+      "km": "សិក្សាដោយខ្លួនឯង"
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Learning style",
+          "km": "របៀបរៀន"
+        },
+        "value": {
+          "en": "Hands-on",
+          "km": "អនុវត្តជាក់ស្តែង"
+        }
+      }
+    ],
+    "highlights": [
+      {
+        "en": "Project setup",
+        "km": "ការដំឡើងគម្រោង"
+      },
+      {
+        "en": "Component practice",
+        "km": "អនុវត្ត Components"
+      }
+    ],
+    "prerequisites": {
+      "en": "Basic HTML, CSS, and JavaScript. Install Node.js to run a Vite project locally.",
+      "km": "ចំណេះដឹង HTML, CSS និង JavaScript មូលដ្ឋាន។ ដំឡើង Node.js ដើម្បីដំណើរការគម្រោង Vite លើកុំព្យូទ័រ។"
+    }
+  },
+  "techStack": {
+    "groups": [
+      {
+        "title": {
+          "en": "Frontend",
+          "km": "ផ្នែក Frontend"
+        },
+        "items": [
+          {
+            "name": "React",
+            "mark": "React",
+            "role": {
+              "en": "UI components",
+              "km": "Components សម្រាប់ UI"
+            }
+          },
+          {
+            "name": "JSX",
+            "mark": "JSX",
+            "role": {
+              "en": "Component markup",
+              "km": "រចនាសម្ព័ន្ធ Component"
+            }
+          },
+          {
+            "name": "CSS",
+            "mark": "CSS",
+            "role": {
+              "en": "Page styling",
+              "km": "រចនារូបរាងទំព័រ"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Development tools",
+          "km": "ឧបករណ៍អភិវឌ្ឍ"
+        },
+        "items": [
+          {
+            "name": "Vite",
+            "mark": "Vite",
+            "role": {
+              "en": "Development and build",
+              "km": "អភិវឌ្ឍ និង Build"
+            }
+          },
+          {
+            "name": "Node.js",
+            "mark": "Node",
+            "role": {
+              "en": "Local tooling",
+              "km": "ឧបករណ៍ក្នុងកុំព្យូទ័រ"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "workflow": {
+    "description": {
+      "en": "Run your Vite project locally so you can see changes immediately. If you use an AI assistant to suggest a component, read the JSX and verify what renders.",
+      "km": "ដំណើរការគម្រោង Vite របស់អ្នកលើកុំព្យូទ័រដើម្បីមើលការផ្លាស់ប្តូរភ្លាមៗ។ បើប្រើជំនួយការ AI ដើម្បីស្នើ Component សូមអាន JSX និងផ្ទៀងផ្ទាត់លទ្ធផលបង្ហាញ។"
+    },
+    "tools": [
+      {
+        "en": "Vite dev server",
+        "km": "Vite Dev Server"
+      },
+      {
+        "en": "Inspect rendered UI",
+        "km": "ពិនិត្យ UI ដែលបានបង្ហាញ"
+      },
+      {
+        "en": "Build check",
+        "km": "ពិនិត្យ Build"
+      }
+    ]
+  },
+  "approach": {
+    "description": {
+      "en": "Work from a running example and build up the page one component at a time.",
+      "km": "ប្រើកម្មវិធីគំរូដែលដំណើរការរួច ហើយផ្គុំទំព័រម្តងមួយ Component។"
+    },
+    "steps": [
+      {
+        "en": "Run the project",
+        "km": "ដំណើរការគម្រោង"
+      },
+      {
+        "en": "Read a component",
+        "km": "អាន Component"
+      },
+      {
+        "en": "Change the page",
+        "km": "កែប្រែទំព័រ"
+      },
+      {
+        "en": "Build and review",
+        "km": "Build និងពិនិត្យ"
+      }
+    ]
+  },
+  "roadmap": {
+    "groups": [
+      {
+        "title": {
+          "en": "Set up and explore",
+          "km": "ដំឡើង និងស្វែងយល់"
+        },
+        "modules": [
+          {
+            "id": "module-1",
+            "title": {
+              "en": "Project setup with Vite",
+              "km": "ដំឡើងគម្រោងជាមួយ Vite"
+            },
+            "description": {
+              "en": "Review the dependencies and scripts to see how to start and build the sample React app.",
+              "km": "ពិនិត្យ Dependencies និង Scripts ដើម្បីដឹងពីរបៀបចាប់ផ្តើម និង Build កម្មវិធី React គំរូ។"
+            }
+          },
+          {
+            "id": "module-2",
+            "title": {
+              "en": "Reusable components",
+              "km": "Component ដែលអាចប្រើឡើងវិញ"
+            },
+            "description": {
+              "en": "Inspect the image component and see how a small component can be reused in a larger page.",
+              "km": "សិក្សា Component រូបភាព និងមើលពីរបៀបយក Component តូចមួយទៅប្រើក្នុងទំព័រធំ។"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Build the page",
+          "km": "បង្កើតទំព័រ"
+        },
+        "modules": [
+          {
+            "id": "module-3",
+            "title": {
+              "en": "Composing a page",
+              "km": "ផ្គុំ Component ជាទំព័រ"
+            },
+            "description": {
+              "en": "Read the main app component to see how JSX and assets come together in a page.",
+              "km": "អាន Component ចម្បងរបស់កម្មវិធី ដើម្បីយល់ពីរបៀបផ្គុំ JSX និងឯកសាររូបភាពក្នុងទំព័រ។"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "description": {
+      "en": "Use a Vite project to practice extracting components and organizing a page.",
+      "km": "ប្រើគម្រោង Vite ដើម្បីអនុវត្តការបំបែក Components និងការរៀបចំទំព័រ។"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Image card",
+          "km": "កាតរូបភាព"
+        },
+        "description": {
+          "en": "Create a reusable card with an image, title, and caption.",
+          "km": "បង្កើតកាតប្រើឡើងវិញដែលមានរូបភាព ចំណងជើង និងអត្ថបទខ្លី។"
+        }
+      },
+      {
+        "title": {
+          "en": "Category gallery",
+          "km": "បណ្តុំរូបភាពតាមប្រភេទ"
+        },
+        "description": {
+          "en": "Compose a gallery from several image cards and adapt it for narrow screens.",
+          "km": "ផ្គុំកាតរូបភាពជាច្រើនជាបណ្តុំរូប ហើយកែប្លង់ឱ្យសមនឹងអេក្រង់តូច។"
+        }
+      }
+    ]
+  },
+  "outcomes": {
+    "items": [
+      {
+        "title": {
+          "en": "Navigate a Vite app",
+          "km": "ស្គាល់រចនាសម្ព័ន្ធ Vite"
+        },
+        "description": {
+          "en": "Find the entry file, main component, and build commands.",
+          "km": "រកឯកសារចាប់ផ្តើម Component ចម្បង និងពាក្យបញ្ជា Build។"
+        }
+      },
+      {
+        "title": {
+          "en": "Reuse UI components",
+          "km": "ប្រើ Components ឡើងវិញ"
+        },
+        "description": {
+          "en": "Break repeated layout into pieces that can be updated in one place.",
+          "km": "បំបែកប្លង់ដដែលៗជាផ្នែកដែលអាចកែប្រែពីកន្លែងតែមួយ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Build a React page",
+          "km": "បង្កើតទំព័រ React"
+        },
+        "description": {
+          "en": "Compose a page from JSX, CSS, and local assets.",
+          "km": "ផ្គុំទំព័រដោយប្រើ JSX, CSS និង Assets ក្នុងគម្រោង។"
+        }
+      }
+    ],
+    "summary": {
+      "en": "Build a React page one reusable component at a time.",
+      "km": "បង្កើតទំព័រ React ពី Component ដែលអាចប្រើឡើងវិញបាន។"
+    }
+  },
+  "access": {
+    "price": {
+      "en": "Free",
+      "km": "ឥតគិតថ្លៃ"
+    },
+    "description": {
+      "en": "Work through the course roadmap at your own pace and track your progress in the study plan.",
+      "km": "សិក្សាតាមផែនការរបស់វគ្គនេះក្នុងល្បឿនរបស់អ្នក ហើយតាមដានវឌ្ឍនភាពក្នុងផែនការសិក្សា។"
+    },
+    "action": {
+      "label": {
+        "en": "Start learning",
+        "km": "ចាប់ផ្តើមសិក្សា"
+      },
+      "href": "#roadmap"
+    },
+    "benefits": [
+      {
+        "en": "Course roadmap",
+        "km": "ផែនការសិក្សា"
+      },
+      {
+        "en": "Study at your own pace",
+        "km": "សិក្សាតាមល្បឿនរបស់អ្នក"
+      },
+      {
+        "en": "Practice exercises",
+        "km": "លំហាត់អនុវត្ត"
+      }
+    ]
+  },
+  "studyPlan": {
+    "description": {
+      "en": "Work through the modules in order. Check off each one after you finish it. Your progress is saved in this browser.",
+      "km": "សិក្សាមេរៀនតាមលំដាប់ ហើយគូសធីកមេរៀននីមួយៗពេលបញ្ចប់។ វឌ្ឍនភាពត្រូវបានរក្សាទុកក្នុងកម្មវិធីរុករកនេះ។"
+    }
+  },
+  "instructor": {
+    "name": {
+      "en": "Teav Piseth",
+      "km": "ទាវ ពិសិដ្ឋ"
+    },
+    "initials": "TP",
+    "role": {
+      "en": "Example author",
+      "km": "អ្នកបង្កើតកូដគំរូ"
+    },
+    "description": {
+      "en": "Teav Piseth creates web development examples and practice projects.",
+      "km": "ទាវ ពិសិដ្ឋ បង្កើតឧទាហរណ៍ និងគម្រោងអនុវត្តអភិវឌ្ឍគេហទំព័រ។"
+    },
+    "skills": [
+      "React",
+      "JSX",
+      "Vite"
+    ]
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": {
+          "en": "Follow a clear roadmap",
+          "km": "សិក្សាតាមផែនការច្បាស់លាស់"
+        },
+        "description": {
+          "en": "Work through the modules in order and apply each topic to a small exercise.",
+          "km": "សិក្សាមេរៀនតាមលំដាប់ ហើយអនុវត្តប្រធានបទនីមួយៗក្នុងលំហាត់តូចមួយ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Practice independently",
+          "km": "អនុវត្តដោយខ្លួនឯង"
+        },
+        "description": {
+          "en": "Try the project prompts in your own editor and revisit lessons as needed.",
+          "km": "សាកល្បងគម្រោងក្នុងកម្មវិធីសរសេរកូដរបស់អ្នក ហើយត្រឡប់មើលមេរៀនពេលចាំបាច់។"
+        }
+      },
+      {
+        "title": {
+          "en": "Keep track of your study",
+          "km": "តាមដានការសិក្សា"
+        },
+        "description": {
+          "en": "Mark modules complete so you know where to pick up next.",
+          "km": "សម្គាល់មេរៀនដែលបានបញ្ចប់ ដើម្បីដឹងថាត្រូវបន្តពីកន្លែងណា។"
+        }
+      }
+    ]
+  },
+  "closing": {
+    "title": {
+      "en": "Ready to start learning?",
+      "km": "ត្រៀមចាប់ផ្តើមសិក្សាហើយឬនៅ?"
+    },
+    "description": {
+      "en": "Start with the first module, then put what you learn into practice.",
+      "km": "ចាប់ផ្តើមពីមេរៀនដំបូង រួចយកអ្វីដែលអ្នកបានរៀនទៅអនុវត្ត។"
+    }
+  }
+}

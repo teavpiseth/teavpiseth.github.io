@@ -1,0 +1,406 @@
+{
+  "id": "javascript-fundamentals",
+  "topic": "JavaScript",
+  "icon": "code",
+  "level": "beginner",
+  "hero": {
+    "label": {
+      "en": "Web development foundations",
+      "km": "មូលដ្ឋានអភិវឌ្ឍគេហទំព័រ"
+    },
+    "title": {
+      "en": "JavaScript Fundamentals",
+      "km": "មូលដ្ឋានគ្រឹះ JavaScript"
+    },
+    "description": {
+      "en": "Start with variables and functions, then use JavaScript to make a web page interactive.",
+      "km": "ចាប់ផ្តើមពីអថេរ និងអនុគមន៍ រួចប្រើ JavaScript ដើម្បីបន្ថែមអន្តរកម្មលើគេហទំព័រ។"
+    }
+  },
+  "objectives": {
+    "description": {
+      "en": "Build a foundation in browser JavaScript through small exercises you can run, edit, and inspect.",
+      "km": "សិក្សាមូលដ្ឋាន JavaScript ក្នុងកម្មវិធីរុករក តាមរយៈលំហាត់តូចៗដែលអ្នកអាចដំណើរការ កែសម្រួល និងពិនិត្យបាន។"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Work with values",
+          "km": "ប្រើអថេរ និងតម្លៃ"
+        },
+        "description": {
+          "en": "Declare variables and see how updating a value changes the result.",
+          "km": "ប្រកាសអថេរ ហើយមើលថាការកែតម្លៃប៉ះពាល់ដល់លទ្ធផលយ៉ាងដូចម្តេច។"
+        }
+      },
+      {
+        "title": {
+          "en": "Write reusable functions",
+          "km": "សរសេរអនុគមន៍ប្រើឡើងវិញ"
+        },
+        "description": {
+          "en": "Use parameters and callbacks to split an exercise into smaller pieces.",
+          "km": "ប្រើ Parameters និង Callbacks ដើម្បីបំបែកលំហាត់ជាផ្នែកតូចៗ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Make a page interactive",
+          "km": "បន្ថែមអន្តរកម្មលើទំព័រ"
+        },
+        "description": {
+          "en": "Create and update elements in an HTML document.",
+          "km": "បង្កើត និងកែសម្រួលធាតុនៅក្នុងឯកសារ HTML។"
+        }
+      }
+    ]
+  },
+  "format": {
+    "delivery": {
+      "en": "Self-paced",
+      "km": "សិក្សាដោយខ្លួនឯង"
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Learning style",
+          "km": "របៀបរៀន"
+        },
+        "value": {
+          "en": "Hands-on",
+          "km": "អនុវត្តជាក់ស្តែង"
+        }
+      }
+    ],
+    "highlights": [
+      {
+        "en": "Browser exercises",
+        "km": "លំហាត់ក្នុងកម្មវិធីរុករក"
+      },
+      {
+        "en": "Guided practice",
+        "km": "លំហាត់មានការណែនាំ"
+      }
+    ],
+    "prerequisites": {
+      "en": "Basic HTML, a web browser, and a code editor.",
+      "km": "ចំណេះដឹង HTML មូលដ្ឋាន កម្មវិធីរុករក និងកម្មវិធីសរសេរកូដ។"
+    }
+  },
+  "techStack": {
+    "groups": [
+      {
+        "title": {
+          "en": "Browser foundations",
+          "km": "មូលដ្ឋានកម្មវិធីរុករក"
+        },
+        "items": [
+          {
+            "name": "JavaScript",
+            "mark": "JS",
+            "role": {
+              "en": "Programming language",
+              "km": "ភាសាសរសេរកម្មវិធី"
+            }
+          },
+          {
+            "name": "HTML",
+            "mark": "HTML",
+            "role": {
+              "en": "Page structure",
+              "km": "រចនាសម្ព័ន្ធទំព័រ"
+            }
+          },
+          {
+            "name": "DOM",
+            "mark": "DOM",
+            "role": {
+              "en": "Page interaction",
+              "km": "អន្តរកម្មលើទំព័រ"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Development tools",
+          "km": "ឧបករណ៍អភិវឌ្ឍ"
+        },
+        "items": [
+          {
+            "name": "DevTools",
+            "mark": "DEV",
+            "role": {
+              "en": "Inspect and debug",
+              "km": "ពិនិត្យ និងកែបញ្ហា"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "workflow": {
+    "description": {
+      "en": "Read each example in your editor, then use the browser console to check a change. An AI assistant can explain an unfamiliar line or suggest an extra test case to verify.",
+      "km": "អានឧទាហរណ៍ក្នុងកម្មវិធីសរសេរកូដ រួចប្រើ Console ដើម្បីពិនិត្យការកែប្រែ។ អ្នកអាចប្រើជំនួយការ AI ដើម្បីពន្យល់កូដ ឬស្នើករណីតេស្តសម្រាប់ផ្ទៀងផ្ទាត់។"
+    },
+    "tools": [
+      {
+        "en": "Read the code",
+        "km": "អានកូដ"
+      },
+      {
+        "en": "Browser console",
+        "km": "Console ក្នុងកម្មវិធីរុករក"
+      },
+      {
+        "en": "Test a change",
+        "km": "តេស្តការកែប្រែ"
+      }
+    ]
+  },
+  "approach": {
+    "description": {
+      "en": "Change one thing at a time and compare the result to what you expected.",
+      "km": "កែប្រែមួយចំណុចម្តងៗ ហើយប្រៀបធៀបលទ្ធផលនឹងអ្វីដែលអ្នករំពឹងទុក។"
+    },
+    "steps": [
+      {
+        "en": "Read an example",
+        "km": "អានឧទាហរណ៍"
+      },
+      {
+        "en": "Predict the output",
+        "km": "ទាយលទ្ធផល"
+      },
+      {
+        "en": "Run and edit",
+        "km": "ដំណើរការ និងកែប្រែ"
+      },
+      {
+        "en": "Explain the change",
+        "km": "ពន្យល់ការកែប្រែ"
+      }
+    ]
+  },
+  "roadmap": {
+    "groups": [
+      {
+        "title": {
+          "en": "Core JavaScript",
+          "km": "មូលដ្ឋាន JavaScript"
+        },
+        "modules": [
+          {
+            "id": "module-1",
+            "title": {
+              "en": "Variables and values",
+              "km": "អថេរ និងតម្លៃ"
+            },
+            "description": {
+              "en": "Practice declaring variables and assigning values. Change the example values and inspect the results in the browser console.",
+              "km": "អនុវត្តការប្រកាសអថេរ និងកំណត់តម្លៃ។ សាកល្បងប្តូរតម្លៃក្នុងឧទាហរណ៍ រួចពិនិត្យលទ្ធផលក្នុង Console។"
+            }
+          },
+          {
+            "id": "module-2",
+            "title": {
+              "en": "Functions and callbacks",
+              "km": "អនុគមន៍ និង Callback"
+            },
+            "description": {
+              "en": "Break a problem into functions, pass arguments, and use a callback to run another function.",
+              "km": "បំបែកបញ្ហាជាអនុគមន៍ បញ្ជូនអាគុយម៉ង់ និងប្រើ Callback ដើម្បីហៅអនុគមន៍មួយទៀត។"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Working in the browser",
+          "km": "ការអនុវត្តក្នុងកម្មវិធីរុករក"
+        },
+        "modules": [
+          {
+            "id": "module-3",
+            "title": {
+              "en": "The document object model",
+              "km": "Document Object Model (DOM)"
+            },
+            "description": {
+              "en": "Use JavaScript to create elements and add them to an HTML document.",
+              "km": "ប្រើ JavaScript ដើម្បីបង្កើតធាតុ ហើយបញ្ចូលធាតុទាំងនោះទៅក្នុងឯកសារ HTML។"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "description": {
+      "en": "Apply what you learn in the roadmap to small browser projects.",
+      "km": "យកអ្វីដែលអ្នករៀនក្នុងផែនការសិក្សាទៅអនុវត្តក្នុងគម្រោងតូចៗសម្រាប់កម្មវិធីរុករក។"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Value calculator",
+          "km": "កម្មវិធីគណនាតម្លៃ"
+        },
+        "description": {
+          "en": "Write a function that computes the total for a list of prices.",
+          "km": "សរសេរអនុគមន៍គណនាតម្លៃសរុបពីបញ្ជីតម្លៃ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Interactive list",
+          "km": "បញ្ជីមានអន្តរកម្ម"
+        },
+        "description": {
+          "en": "Add list items to a page from a button and a text input.",
+          "km": "បន្ថែមធាតុបញ្ជីទៅទំព័រ ដោយប្រើប៊ូតុង និងប្រអប់អត្ថបទ។"
+        }
+      }
+    ]
+  },
+  "outcomes": {
+    "items": [
+      {
+        "title": {
+          "en": "Read browser scripts",
+          "km": "អាន Script ក្នុងកម្មវិធីរុករក"
+        },
+        "description": {
+          "en": "Follow how data moves through a small script.",
+          "km": "តាមដានរបៀបដែលទិន្នន័យផ្លាស់ប្តូរក្នុង Script តូចមួយ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Debug with the console",
+          "km": "កែបញ្ហាដោយប្រើ Console"
+        },
+        "description": {
+          "en": "Use console output to check values and diagnose simple errors.",
+          "km": "ប្រើលទ្ធផលក្នុង Console ដើម្បីពិនិត្យតម្លៃ និងរកកំហុសងាយៗ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Build a small interaction",
+          "km": "បង្កើតអន្តរកម្មតូចមួយ"
+        },
+        "description": {
+          "en": "Connect an input and a function to a visible page update.",
+          "km": "ភ្ជាប់ប្រអប់បញ្ចូល និងអនុគមន៍ទៅនឹងការកែប្រែដែលមើលឃើញលើទំព័រ។"
+        }
+      }
+    ],
+    "summary": {
+      "en": "Start with a few lines of JavaScript. Finish with a page that responds to you.",
+      "km": "ចាប់ផ្តើមពី JavaScript ពីរបីបន្ទាត់ ហើយបញ្ចប់ដោយទំព័រដែលអាចឆ្លើយតបនឹងអ្នក។"
+    }
+  },
+  "access": {
+    "price": {
+      "en": "Free",
+      "km": "ឥតគិតថ្លៃ"
+    },
+    "description": {
+      "en": "Work through the course roadmap at your own pace and track your progress in the study plan.",
+      "km": "សិក្សាតាមផែនការរបស់វគ្គនេះក្នុងល្បឿនរបស់អ្នក ហើយតាមដានវឌ្ឍនភាពក្នុងផែនការសិក្សា។"
+    },
+    "action": {
+      "label": {
+        "en": "Start learning",
+        "km": "ចាប់ផ្តើមសិក្សា"
+      },
+      "href": "#roadmap"
+    },
+    "benefits": [
+      {
+        "en": "Course roadmap",
+        "km": "ផែនការសិក្សា"
+      },
+      {
+        "en": "Study at your own pace",
+        "km": "សិក្សាតាមល្បឿនរបស់អ្នក"
+      },
+      {
+        "en": "Practice exercises",
+        "km": "លំហាត់អនុវត្ត"
+      }
+    ]
+  },
+  "studyPlan": {
+    "description": {
+      "en": "Work through the modules in order. Check off each one after you finish it. Your progress is saved in this browser.",
+      "km": "សិក្សាមេរៀនតាមលំដាប់ ហើយគូសធីកមេរៀននីមួយៗពេលបញ្ចប់។ វឌ្ឍនភាពត្រូវបានរក្សាទុកក្នុងកម្មវិធីរុករកនេះ។"
+    }
+  },
+  "instructor": {
+    "name": {
+      "en": "Teav Piseth",
+      "km": "ទាវ ពិសិដ្ឋ"
+    },
+    "initials": "TP",
+    "role": {
+      "en": "Example author",
+      "km": "អ្នកបង្កើតកូដគំរូ"
+    },
+    "description": {
+      "en": "Teav Piseth creates web development examples and practice projects.",
+      "km": "ទាវ ពិសិដ្ឋ បង្កើតឧទាហរណ៍ និងគម្រោងអនុវត្តអភិវឌ្ឍគេហទំព័រ។"
+    },
+    "skills": [
+      "JavaScript",
+      "HTML",
+      "DOM"
+    ]
+  },
+  "benefits": {
+    "items": [
+      {
+        "title": {
+          "en": "Follow a clear roadmap",
+          "km": "សិក្សាតាមផែនការច្បាស់លាស់"
+        },
+        "description": {
+          "en": "Work through the modules in order and apply each topic to a small exercise.",
+          "km": "សិក្សាមេរៀនតាមលំដាប់ ហើយអនុវត្តប្រធានបទនីមួយៗក្នុងលំហាត់តូចមួយ។"
+        }
+      },
+      {
+        "title": {
+          "en": "Practice independently",
+          "km": "អនុវត្តដោយខ្លួនឯង"
+        },
+        "description": {
+          "en": "Try the project prompts in your own editor and revisit lessons as needed.",
+          "km": "សាកល្បងគម្រោងក្នុងកម្មវិធីសរសេរកូដរបស់អ្នក ហើយត្រឡប់មើលមេរៀនពេលចាំបាច់។"
+        }
+      },
+      {
+        "title": {
+          "en": "Keep track of your study",
+          "km": "តាមដានការសិក្សា"
+        },
+        "description": {
+          "en": "Mark modules complete so you know where to pick up next.",
+          "km": "សម្គាល់មេរៀនដែលបានបញ្ចប់ ដើម្បីដឹងថាត្រូវបន្តពីកន្លែងណា។"
+        }
+      }
+    ]
+  },
+  "closing": {
+    "title": {
+      "en": "Ready to start learning?",
+      "km": "ត្រៀមចាប់ផ្តើមសិក្សាហើយឬនៅ?"
+    },
+    "description": {
+      "en": "Start with the first module, then put what you learn into practice.",
+      "km": "ចាប់ផ្តើមពីមេរៀនដំបូង រួចយកអ្វីដែលអ្នកបានរៀនទៅអនុវត្ត។"
+    }
+  }
+}
